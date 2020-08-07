@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "dogelator",
-    "slug": "doge-native",
+    "slug": "doge-native-v2",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,6 +21,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "such doge, much native, wow",
+    "githubUrl": "https://github.com/roeintheglasses/doge-native"
   }
 }
