@@ -76,15 +76,9 @@ expo build:ios
 for the ios build.
 Make sure to modify the app.json file as per your needs.
 
-##### The web app will run at port 3000 by default at localhost.
-
-```
-http://localhost:3000/
-
-```
 
 ## Author :
 
-*  **Hrishi Jangir** - *Other Works* - [Github](https://github.com/roeintheglasses)
+*  **Hrishi Jangir** - *Other Works* - [Portfolio](https://roeintheglasses.github.io)
 
 ### [License: MIT](LICENSE.md)  
