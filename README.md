@@ -15,6 +15,7 @@
   <img src="https://img.shields.io/badge/iOS-4630EB.svg?style=ffor-the-badge&logo=APPLE&labelColor=999999&logoColor=fff" href="https://expo.io/dashboard/roeintheglasses/builds/4839bc0b-fbcc-4ec7-951d-2e5e3ffc2fce">
   <img src="https://img.shields.io/badge/Android-4630EB.svg?style=ffor-the-badge&logo=ANDROID&labelColor=A4C639&logoColor=fff" href="https://expo.io/dashboard/roeintheglasses/builds/4839bc0b-fbcc-4ec7-951d-2e5e3ffc2fce">
   <img src="https://img.shields.io/badge/web-4630EB.svg?style=ffor-the-badge&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" href="https://expo.io/dashboard/roeintheglasses/builds/4839bc0b-fbcc-4ec7-951d-2e5e3ffc2fce">
+  <img src='https://bettercodehub.com/edge/badge/roeintheglasses/doge-native?branch=master'>
 </p>
 
   
