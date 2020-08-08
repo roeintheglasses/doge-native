@@ -24,13 +24,10 @@ const dogeTranslator = () => {
         },
         image: {
             alignItems: "center",
-            padding: 10,
+            paddingTop: 40,
+            paddingBottom: 20,
             width: 150,
             height: 150,
-        },
-        inputRow: {
-            flex: 1,
-            flexDirection: "row",
         }
     })
     return (
@@ -39,21 +36,13 @@ const dogeTranslator = () => {
                 style={styles.image}
                 source={require('../assets/icon.png')}
             />
-            <Text style={{ padding: 20, fontWeight: "bold", color: "white" }}> Dogeify Your Life</Text>
-            <View style={styles.inputRow}>
-                <TextInput
-                    style={styles.input}
-                    placeholder="Type here to translate to doge!"
-                    onChangeText={text => setText(dogeify(text))}
-                />
-                <Button
-                    onPress={() => setText('')}
-                    title="clear"
-                    color="#841584"
-                    accessibilityLabel="clear"
-                />
-            </View>
-
+            <Text style={{ paddingBottom: 40, fontWeight: "bold", color: "white" }}> Dogeify Your Life</Text>
+            <TextInput
+                style={styles.input}
+                placeholder="Type here to translate to doge!"
+                placeholderTextColor="white"
+                onChangeText={text => setText(dogeify(text))}
+            />
             <TouchableOpacity
                 style={styles.button}
                 onPress={() => Clipboard.setString(value)}

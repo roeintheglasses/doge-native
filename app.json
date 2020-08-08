@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "dogelator",
-    "slug": "doge-native-v3",
+    "slug": "doge-native-v5",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,7 +16,13 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "com.roeintheglasses.dogeinator",
+      "versionCode": 1
+    },
     "ios": {
+      "bundleIdentifier": "com.roeintheglasses.dogeinator",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "web": {
