@@ -6,9 +6,9 @@
 <img style="text-align:center;" src="https://image.winudf.com/v2/image1/c291bmRib2FyZC5tZW1lLmRvZ2Uuc291bmRfaWNvbl8xNTQ5OTk2OTc3XzA5OQ/icon.png?w=170&fakeurl=1">
 </p>
 
-<p align="center" style="font-size:4em;">
+<h1 align="center">
   Check it out at : <a href="https://expo.io/dashboard/roeintheglasses/builds/4839bc0b-fbcc-4ec7-951d-2e5e3ffc2fce">Expo 📱</a>
-</p>
+</h1>
 
 
 <p align="center">
