@@ -1,14 +1,14 @@
 {
   "expo": {
     "name": "dogelator",
-    "slug": "doge-native-v5",
+    "slug": "doge-native-v20",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#26262C"
+      "backgroundColor": "#1f1f1f"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,11 +18,12 @@
     ],
     "android": {
       "package": "com.roeintheglasses.dogeinator",
-      "versionCode": 1
+      "versionCode": 1,
+      "softwareKeyboardLayoutMode": "pan"
     },
     "ios": {
       "bundleIdentifier": "com.roeintheglasses.dogeinator",
-      "buildNumber": "1.0.0",
+      "buildNumber": "1.0.13",
       "supportsTablet": true
     },
     "web": {

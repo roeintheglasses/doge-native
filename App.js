@@ -1,20 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, SafeAreaView } from 'react-native';
-import TextInput from './components/textInput'
+import { Provider as PaperProvider } from 'react-native-paper';
+import { NavigationContainer } from '@react-navigation/native';
+import MainPage from './components/mainPage'
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <TextInput></TextInput>
-    </SafeAreaView>
+    <PaperProvider>
+      <NavigationContainer>
+        <MainPage />
+      </NavigationContainer>
+    </PaperProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#26262C',
-    paddingTop: 80,
-    alignItems: 'center',
-  },
-});
