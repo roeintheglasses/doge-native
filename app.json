@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "dogelator",
-    "slug": "doge-native-v21",
+    "name": "Meme Machine",
+    "slug": "doge-native-v33",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,12 +18,12 @@
     ],
     "android": {
       "package": "com.roeintheglasses.dogeinator",
-      "versionCode": 2,
+      "versionCode": 3,
       "softwareKeyboardLayoutMode": "pan"
     },
     "ios": {
       "bundleIdentifier": "com.roeintheglasses.dogeinator",
-      "buildNumber": "1.0.13",
+      "buildNumber": "1.0.20",
       "supportsTablet": true
     },
     "web": {

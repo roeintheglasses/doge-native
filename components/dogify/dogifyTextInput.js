@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import { View, StyleSheet, Clipboard, Keyboard, TouchableOpacity, TouchableWithoutFeedback, Image } from 'react-native';
+import { View, StyleSheet, Clipboard, Keyboard, TouchableOpacity, TouchableWithoutFeedback, TextInput } from 'react-native';
 import dogeify from 'dogeify-js';
-import { TextInput, Text, Button } from 'react-native-paper';
+import { Text, Button } from 'react-native-paper';
 
 const dogeTranslator = () => {
     const [value, setDoge] = useState('');
@@ -25,9 +25,10 @@ const dogeTranslator = () => {
             width: 300,
             backgroundColor: "white",
             fontSize: 14,
-            padding: 0,
+            padding: 10,
             margin: 0,
             borderWidth: 0,
+            borderRadius: 5,
         },
         dogeText: {
             alignItems: "center",
@@ -55,11 +56,6 @@ const dogeTranslator = () => {
     return (
 
         <View style={styles.container}>
-            <Image
-                style={styles.image}
-                source={require('../assets/icon.png')}
-            />
-            <Text style={{ paddingTop: 10, paddingBottom: 10, fontWeight: "bold", color: "white" }}>wow</Text>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={{ flex: .2 }}>
                     <TextInput
