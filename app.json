@@ -1,14 +1,14 @@
 {
   "expo": {
     "name": "Meme Machine",
-    "slug": "doge-native-v33",
-    "version": "1.0.0",
+    "slug": "doge-native-v20",
+    "version": "1.0.45",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#1f1f1f"
+      "backgroundColor": "#1F1F1F"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,7 +23,7 @@
     },
     "ios": {
       "bundleIdentifier": "com.roeintheglasses.dogeinator",
-      "buildNumber": "1.0.20",
+      "buildNumber": "1.0.45",
       "supportsTablet": true
     },
     "web": {

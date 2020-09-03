@@ -18,9 +18,7 @@ export function DrawerContent(props) {
         <View style={{ flex: 1 }}>
             <DrawerContentScrollView {...props}>
                 <View style={styles.drawerContent}>
-                    <View style={styles.userInfoSection}
-                        onPress={() => { props.navigation.navigate('Homescreen') }}
-                    >
+                    <View style={styles.userInfoSection}>
                         <View style={{ marginTop: 20, alignItems: 'center' }}>
                             <Avatar.Icon
                                 icon="dog"
@@ -70,7 +68,7 @@ export function DrawerContent(props) {
                         <DrawerItem
                             icon={({ color, size }) => (
                                 <Icon
-                                    name="dog"
+                                    name="alert-octagram-outline"
                                     color={"white"}
                                     size={size}
                                 />
@@ -88,7 +86,7 @@ export function DrawerContent(props) {
                     </Drawer.Section>
                 </View>
             </DrawerContentScrollView>
-            <Footer style={styles.footer}></Footer>
+            <Footer></Footer>
         </View>
     );
 }
@@ -119,10 +117,5 @@ const styles = StyleSheet.create({
     drawerSection: {
         marginTop: 15,
         color: 'white',
-    },
-    footer: {
-        marginBottom: 15,
-        borderTopColor: '#111111',
-        borderTopWidth: 1
     },
 });

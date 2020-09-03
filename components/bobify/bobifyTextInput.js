@@ -1,19 +1,19 @@
 import React, { useState, useRef } from 'react';
 import { View, StyleSheet, Clipboard, Keyboard, TouchableOpacity, TouchableWithoutFeedback, TextInput, Dimensions } from 'react-native';
-import dogeify from 'dogeify-js';
+import spongibobu from 'spongibobu.js'
 import { Text, Button } from 'react-native-paper';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-const dogeTranslator = () => {
-    const [value, setDoge] = useState('');
+const bobTranslator = () => {
+    const [value, setBob] = useState('');
     const [normalTxt, setNormal] = useState('');
     const txtInput = useRef(null);
     const onClearButtonClick = () => {
         txtInput.current.clear();
         setNormal('');
-        setDoge('')
+        setBob('')
     };
     const onCopyButtonClick = () => {
         Clipboard.setString(value)
@@ -62,10 +62,10 @@ const dogeTranslator = () => {
                         mode='outlined'
                         ref={txtInput}
                         style={styles.input}
-                        placeholder="Type here to translate to doge!"
+                        placeholder="TyPe hErE tO boBiFy"
                         placeholderTextColor="Black"
                         onChangeText={(text) => {
-                            setDoge(dogeify(text));
+                            setBob(spongibobu(text));
                             setNormal(text);
                         }}
                         value={normalTxt}
@@ -90,4 +90,4 @@ const dogeTranslator = () => {
 
 
 
-export default dogeTranslator;
+export default bobTranslator;

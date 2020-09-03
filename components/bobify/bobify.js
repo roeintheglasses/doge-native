@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, } from 'react-native';
+import BobifyTextInput from './bobifyTextInput'
 
 const styles = StyleSheet.create({
     container: {
@@ -10,15 +11,10 @@ const styles = StyleSheet.create({
     },
 });
 
-export default function bobify() {
+export default function dogify() {
     return (
         <View style={styles.container}>
-
-            <View style={{ flex: .9 }}>
-                <Text>BobiFy</Text>
-            </View>
-            <View style={{ flex: .1 }}>
-            </View>
+            <BobifyTextInput></BobifyTextInput>
         </View>
     );
 }

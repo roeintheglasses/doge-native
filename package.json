@@ -12,6 +12,7 @@
     "@react-navigation/drawer": "^5.9.0",
     "@react-navigation/native": "^5.7.3",
     "@react-navigation/stack": "^5.9.0",
+    "axios": "^0.20.0",
     "dogeify-js": "1.1.0",
     "expo": "~38.0.8",
     "expo-font": "~8.2.1",
@@ -24,8 +25,10 @@
     "react-native-reanimated": "~1.9.0",
     "react-native-safe-area-context": "~3.0.7",
     "react-native-screens": "~2.9.0",
+    "react-native-snap-carousel": "^4.0.0-beta.6",
     "react-native-vector-icons": "^7.0.0",
-    "react-native-web": "~0.11.7"
+    "react-native-web": "~0.11.7",
+    "spongibobu.js": "^1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",

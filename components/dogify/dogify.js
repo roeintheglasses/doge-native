@@ -14,12 +14,7 @@ const styles = StyleSheet.create({
 export default function dogify() {
     return (
         <View style={styles.container}>
-
-            <View style={{ flex: .9 }}>
-                <DogifyTextInput></DogifyTextInput>
-            </View>
-            <View style={{ flex: .1 }}>
-            </View>
+            <DogifyTextInput></DogifyTextInput>
         </View>
     );
 }
