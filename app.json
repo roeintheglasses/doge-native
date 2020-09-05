@@ -18,12 +18,12 @@
     ],
     "android": {
       "package": "com.roeintheglasses.dogeinator",
-      "versionCode": 3,
+      "versionCode": 5,
       "softwareKeyboardLayoutMode": "pan"
     },
     "ios": {
       "bundleIdentifier": "com.roeintheglasses.dogeinator",
-      "buildNumber": "1.0.45",
+      "buildNumber": "1.5",
       "supportsTablet": true
     },
     "web": {

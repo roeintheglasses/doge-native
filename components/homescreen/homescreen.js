@@ -1,65 +1,35 @@
 import axios from 'axios';
 import React from 'react'
-import { Platform, StyleSheet, Text, View, ScrollView, Dimensions, Image } from 'react-native';
+import { StyleSheet, View, Dimensions, Image } from 'react-native';
+import { Appbar, Text, Button } from 'react-native-paper';
 
 var deviceWidth = Dimensions.get('window').width;
+var deviceHeight = Dimensions.get('window').height;
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#e5e5e5",
-    },
-    headerText: {
-        fontSize: 30,
-        textAlign: "center",
-        margin: 10,
-        color: 'white',
-        fontWeight: "bold"
-    },
-    firstView: {
-        width: deviceWidth,
-        backgroundColor: '#F44336',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'row'
-    },
-    secondView: {
-        width: deviceWidth,
-        backgroundColor: '#9C27B0',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'row'
-    },
-    thirdView: {
-        width: deviceWidth,
-        backgroundColor: '#3F51B5',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'row'
-    },
-    forthView: {
-        width: deviceWidth,
-        backgroundColor: '#009688',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'row'
-    },
-
-});
 
 export default class HomeScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             imageURL: '',
+            loading: true
         }
+        this.fetchMeme = this.fetchMeme.bind(this);
     }
     componentDidMount() {
-        axios.get('https://dog.ceo/api/breeds/image/random')
+        axios.get('https://meme-api.herokuapp.com/gimme/desimemes')
             .then(response => {
-                this.setState({ imageURL: response.data.message });
+                this.setState({ imageURL: response.data.url });
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
+
+    fetchMeme() {
+        axios.get('https://meme-api.herokuapp.com/gimme/desimemes')
+            .then(response => {
+                this.setState({ imageURL: response.data.url });
             })
             .catch(error => {
                 console.log(error);
@@ -67,26 +37,58 @@ export default class HomeScreen extends React.Component {
     }
 
     render() {
+        const styles = StyleSheet.create({
+            container: {
+                flex: 1,
+                alignItems: "center",
+                backgroundColor: "#000000",
+                width: deviceWidth,
+                height: deviceHeight,
+            },
+            headerText: {
+                fontSize: 30,
+                textAlign: "center",
+                marginTop: 50,
+                marginBottom: 20,
+                color: 'white',
+                fontWeight: "bold"
+            },
+            imageContainer: {
+                width: deviceWidth,
+                height: deviceWidth * 1.1,
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginTop: 30,
+            },
+            memeImage: {
+                resizeMode: 'contain',
+                width: '100%',
+                height: '100%'
+            },
+            fetchMeme: {
+                marginTop: 30,
+                padding: 10,
+            },
+            appbar: {
+                width: deviceWidth,
+                paddingTop: 20,
+                paddingBottom: 10,
+                marginBottom: 30,
+            }
+        });
         return (
             <View style={styles.container}>
-                <ScrollView horizontal={true} pagingEnabled={true} showsHorizontalScrollIndicator={false}>
-                    <View style={styles.firstView}>
-                        <Text style={styles.headerText}>First View</Text>
-                    </View>
-
-                    <View style={styles.secondView}>
-                        <Text style={styles.headerText}>Second View</Text>
-                    </View>
-
-                    <View style={styles.thirdView}>
-                        <Text style={styles.headerText}>Third View</Text>
-                    </View>
-
-                    <View style={styles.forthView}>
-                        <Text style={styles.headerText}>Forth View</Text>
-                    </View>
-                </ScrollView>
+                <Appbar.Header style={styles.appbar}>
+                    <Appbar.Action icon="forwardburger" onPress={this.props.navigation.openDrawer} />
+                    <Appbar.Content title="Homescreen" subtitle="Meme of the Day" />
+                </Appbar.Header>
+                <View style={styles.imageContainer}>
+                    <Image style={styles.memeImage} source={{ uri: this.state.imageURL }}></Image>
+                </View>
+                <Button style={styles.fetchMeme} icon="send" onPress={this.fetchMeme} mode="contained">Fetch New Meme</Button>
             </View>
         );
     }
 }
+
+
