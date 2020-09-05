@@ -1,12 +1,13 @@
 # Meme Machine 😸
 ## A Jack of all Memes APP
-#### Such Memes, Much Fun, wow. 
-
-
 
 <p align="center">
-<img style="text-align:center;" src="https://github.com/roeintheglasses/doge-native/blob/master/assets/icon.png?raw=true">
+<img style="text-align:center;" width="300" height="300" src="https://github.com/roeintheglasses/doge-native/blob/master/assets/icon.png?raw=true">
 </p>
+
+<h1 align="center"  style="text-align:center;">
+  <b>Such Memes, Much Fun, wow.</b>
+</h1>
 
 <h1 align="center">
   Check it out at : <a href="https://expo.io/dashboard/roeintheglasses/builds/4839bc0b-fbcc-4ec7-951d-2e5e3ffc2fce">Expo 📱</a>
