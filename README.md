@@ -1,9 +1,11 @@
-# Doge-native 😸
-### Such doge, Much wow. 
+# Meme Machine 😸
+## A Jack of all Memes APP
+#### Such Memes, Much Fun, wow. 
+
 
 
 <p align="center">
-<img style="text-align:center;" src="https://image.winudf.com/v2/image1/c291bmRib2FyZC5tZW1lLmRvZ2Uuc291bmRfaWNvbl8xNTQ5OTk2OTc3XzA5OQ/icon.png?w=170&fakeurl=1">
+<img style="text-align:center;" src="https://github.com/roeintheglasses/doge-native/blob/master/assets/icon.png?raw=true">
 </p>
 
 <h1 align="center">
