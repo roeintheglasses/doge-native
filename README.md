@@ -10,7 +10,7 @@
 </h1>
 
 <h1 align="center">
-  Check it out at : <a href="https://expo.io/dashboard/roeintheglasses/builds/4839bc0b-fbcc-4ec7-951d-2e5e3ffc2fce">Expo 📱</a>
+  Check it out at : <a href="https://expo.io/dashboard/roeintheglasses/doge-native-v20">Expo 📱</a>
 </h1>
 
 
