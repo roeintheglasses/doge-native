@@ -39,7 +39,7 @@
 Clone repo using
 
 ```
-git clone https://github.com/roeintheglasses/apollo.git
+git clone https://github.com/roeintheglasses/doge-native.git
 ```
 
 #### Install yarn dependencies
